@@ -4,9 +4,9 @@ cyan='\033[4;36m'
 red='\033[0;31m'
 no_color='\033[0m'
 
-git clone https://github.com/flutter/flutter.git
+git clone https://github.com/flutter/flutter.git $HOME/flutter
 
-config="export PATH=\$PATH:$(pwd)/flutter/bin"
+config="export PATH=\$PATH:$HOME/flutter/bin"
 
 if [ $SHELL = '/bin/bash' ]; then
 	echo -e "\n$config" >>~/.bash_profile
